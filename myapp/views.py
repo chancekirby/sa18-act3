@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 
 def product_list(request):
     products = Product.objects.all()
-    return render(request, 'products/list.html', {'products', products})
+    return render(request, 'products/list.html', {'products': products})
 
 
 def product_detail(request, id): 
